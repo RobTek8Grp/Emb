@@ -66,7 +66,7 @@ entity top is
            
            -- Hardware buttons
            j7_btn_i : in STD_LOGIC_VECTOR(1 downto 0);
-           j7_dip_sw_i : in STD_LOGIC_VECTOR(7 downto 0); -- Used for enable signals: 0: enable_ai, 1: enable_filter
+           j7_dip_sw_i : in STD_LOGIC_VECTOR(7 downto 0) -- Used for enable signals: 0: enable_ai, 1: enable_filter
     );
 end top;
 

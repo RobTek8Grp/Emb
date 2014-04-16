@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn ai_player.prj
+-top ai_player
+-p xa6slx45fgg484-3
+-ofn ai_player.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt
