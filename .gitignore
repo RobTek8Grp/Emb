@@ -1,3 +1,14 @@
 *.xreport
 *.data/wt
-*.runs
+*.runs/*/xst
+*.runs/*/_xmsgs
+*.runs/.jobs
+*.runs/*/*.bat
+*.runs/*/*.js
+*.runs/*/*.log
+*.runs/*/*.lso
+*.runs/*/*.rst
+*.runs/*/*.sh
+*.runs/*/*.txt
+*.runs/*/*.xrpt
+
