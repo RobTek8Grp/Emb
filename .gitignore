@@ -11,4 +11,4 @@
 *.runs/*/*.sh
 *.runs/*/*.txt
 *.runs/*/*.xrpt
-
+*.log
