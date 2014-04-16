@@ -1,0 +1,325 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+
+---- Target Parameters
+Target Device                      : xa6slx45fgg484-3
+Output File Name                   : "top.ngc"
+
+---- Source Options
+Top Module Name                    : top
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/imports/VHDL/log_pkg.vhd" into library mylibs
+Parsing package <log_pkg>.
+Parsing package body <log_pkg>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/mytypes.vhd" into library mylibs
+Parsing package <mytypes>.
+Parsing package body <mytypes>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/vga_output.vhd" into library work
+Parsing entity <vga_output>.
+Parsing architecture <Behavioral> of entity <vga_output>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/vga_input.vhd" into library work
+Parsing entity <vga_input>.
+Parsing architecture <Behavioral> of entity <vga_input>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/hmi.vhd" into library work
+Parsing entity <hmi>.
+Parsing architecture <Behavioral> of entity <hmi>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/frame_overlay.vhd" into library work
+Parsing entity <frame_overlay>.
+Parsing architecture <Behavioral> of entity <frame_overlay>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/frame_analysis.vhd" into library work
+Parsing entity <frame_analysis>.
+Parsing architecture <Behavioral> of entity <frame_analysis>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/filter.vhd" into library work
+Parsing entity <filter>.
+Parsing architecture <Behavioral> of entity <filter>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/ai_player.vhd" into library work
+Parsing entity <ai_player>.
+Parsing architecture <Behavioral> of entity <ai_player>.
+Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <vga_input> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <frame_analysis> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <frame_overlay> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <vga_output> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ai_player> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <hmi> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 76: Net <clock_200M> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 78: Net <clk_100M> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 90: Net <enable_frame_overlay> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd".
+WARNING:Xst:647 - Input <j7_dip_sw_i<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_200M_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" line 274: Output port <ai_enable_o> of the instance <hmi_1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <clock_200M> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <clk_100M> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <enable_frame_overlay> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <vga_output>.
+    Related source file is "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/vga_output.vhd".
+WARNING:Xst:647 - Input <pixel_RGB_i_header_pos_hpos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pixel_RGB_i_header_pos_vpos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <g_channel>.
+    Found 3-bit register for signal <b_channel>.
+    Found 1-bit register for signal <hsync>.
+    Found 1-bit register for signal <vsync>.
+    Found 3-bit register for signal <r_channel>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <vga_output> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 3-bit register                                        : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <b_channel_0> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <b_channel_1> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <b_channel_2> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_channel_0> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_channel_1> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_channel_2> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_channel_0> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_channel_1> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_channel_2> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hsync> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vsync> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <top> ...
+
+Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <fx2_vga_red_clk_o> driven by black box <vga_input>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <fx2_vga_green_clk_o> driven by black box <vga_input>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <fx2_vga_blue_clk_o> driven by black box <vga_input>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <ft232h_rs232_tx_o> driven by black box <ai_player>. Possible simulation mismatch.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 51
+#      IBUF                        : 36
+#      OBUF                        : 15
+# Others                           : 6
+#      ai_player                   : 1
+#      filter                      : 1
+#      frame_analysis              : 1
+#      frame_overlay               : 1
+#      hmi                         : 1
+#      vga_input                   : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa6slx45fgg484-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          58
+ Number of bonded IOBs:                  51  out of    316    16%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 3.150ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 152 / 152
+-------------------------------------------------------------------------
+Delay:               3.150ns (Levels of Logic = 1)
+  Source:            vga_input_1:r_clock_o (PAD)
+  Destination:       fx2_vga_red_clk_o (PAD)
+
+  Data Path: vga_input_1:r_clock_o to fx2_vga_red_clk_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    vga_input:r_clock_o    1   0.000   0.579  vga_input_1 (fx2_vga_red_clk_o_OBUF)
+     OBUF:I->O                 2.571          fx2_vga_red_clk_o_OBUF (fx2_vga_red_clk_o)
+    ----------------------------------------
+    Total                      3.150ns (2.571ns logic, 0.579ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.79 secs
+ 
+--> 
+
+
+Total memory usage is 392208 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

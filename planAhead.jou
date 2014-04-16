@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Wed Apr 16 09:52:40 2014
+# Process ID: 4791
+# Log file: /home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/planAhead.log
+# Journal file: /home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.ppr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1

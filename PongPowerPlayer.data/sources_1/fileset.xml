@@ -18,12 +18,6 @@
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ai_player.vhd">
-      <FileInfo>
-        <Attr Name="UsedInSynthesis" Val="1"/>
-        <Attr Name="UsedInSimulation" Val="1"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/vga_output.vhd">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
@@ -60,6 +54,12 @@
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/ai_player.vhd">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/top.vhd">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
@@ -68,10 +68,10 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ai_player"/>
+      <Option Name="TopModule" Val="top"/>
       <Option Name="TopLib" Val="work"/>
       <Option Name="TopArchitecture" Val="Behavioral"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/ai_player.vhd"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/top.vhd"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

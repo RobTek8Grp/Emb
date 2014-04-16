@@ -267,7 +267,7 @@ begin
             bat_position_i => bat_position_frame_analysis,
             bat_control_key_up_i => up_hmi,
             bat_control_key_down_i => down_hmi,
-            ai_enable => ai_enable_hmi,
+            ai_enable => enable_ai,
             uart_tx_o => ft232h_rs232_tx_o
     );
     

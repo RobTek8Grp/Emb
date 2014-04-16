@@ -1,38 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04/15/2014 12:22:56 PM
--- Design Name: 
--- Module Name: vga_output - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
+--
+-- This file is based on and inspired by the work of Anders Blaabjerg Lange from Univerity of Southern Denmark
 -- 
 ----------------------------------------------------------------------------------
 
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 library mylibs;
 use mylibs.mytypes.all;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity vga_output is
     Port ( clk_100M_i : in STD_LOGIC;
@@ -45,8 +23,30 @@ entity vga_output is
 end vga_output;
 
 architecture Behavioral of vga_output is
+    signal r_channel : STD_LOGIC_VECTOR(2 downto 0) := (others=>'0');
+    signal g_channel : STD_LOGIC_VECTOR(2 downto 0) := (others=>'0');
+    signal b_channel : STD_LOGIC_VECTOR(2 downto 0) := (others=>'0');
+    signal hsync : STD_LOGIC := '0';
+    signal vsync : STD_LOGIC := '0';
 
 begin
+    -- Connect outputs
+    hsync_o <= hsync;
+    vsync_o <= vsync;
+    r_channel_o <= r_channel;
+    g_channel_o <= g_channel;
+    b_channel_o <= b_channel;
 
+    -- Clock controlled output
+    output_vga : process(clk_100M_i) -- Clock can be changed to 25MHz
+    begin
+        if rising_edge(clk_100M_i) then
+            r_channel <= pixel_RGB_i.intensity_red;
+            g_channel <= pixel_RGB_i.intensity_green;
+            b_channel <= pixel_RGB_i.intensity_blue;
+            hsync <= pixel_RGB_i.header.hsync;
+            vsync <= pixel_RGB_i.header.vsync;            
+        end if;      
+    end process;
 
 end Behavioral;

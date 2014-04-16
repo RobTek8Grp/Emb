@@ -4,10 +4,10 @@
     <Filter Type="Srcs"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ai_player"/>
+      <Option Name="TopModule" Val="top"/>
       <Option Name="TopLib" Val="work"/>
       <Option Name="TopArchitecture" Val="Behavioral"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/ai_player.vhd"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/top.vhd"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
       <Option Name="SrcSet" Val="sources_1"/>
       <Option Name="NGOutputHDLFormat" Val="vhdl"/>
