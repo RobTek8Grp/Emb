@@ -4,6 +4,7 @@ run
 -top top
 -p xa6slx45fgg484-3
 -ofn top.ngc
+-sd {../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation}
 -opt_mode speed
 -opt_level 1
 -netlist_hierarchy rebuilt

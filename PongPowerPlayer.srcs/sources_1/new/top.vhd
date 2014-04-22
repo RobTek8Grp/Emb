@@ -158,7 +158,8 @@ architecture Behavioral of top is
     end component;
     
     component ai_player is
-        Port ( ball_position_i : in pixelPosition;
+        Port ( clock_200M_i : in STD_LOGIC;
+               ball_position_i : in pixelPosition;
                bat_position_i : in pixelPosition;
                bat_control_key_up_i : in STD_LOGIC;
                bat_control_key_down_i : in STD_LOGIC;
@@ -263,6 +264,7 @@ begin
     
     ai_player_1 : ai_player
     port map (
+            clock_200M_i => clock_200M,
             ball_position_i => ball_position_frame_analysis,
             bat_position_i => bat_position_frame_analysis,
             bat_control_key_up_i => up_hmi,

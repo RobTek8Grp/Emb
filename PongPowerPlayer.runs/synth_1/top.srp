@@ -1,10 +1,10 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.6 - xst P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: top.prj
@@ -49,40 +49,46 @@ Optimization Goal                  : speed
 Optimization Effort                : 1
 Netlist Hierarchy                  : rebuilt
 
+---- Other Options
+Cores Search Directories           : {../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation}
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/imports/VHDL/log_pkg.vhd" into library mylibs
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/imports/VHDL/log_pkg.vhd" into library mylibs
 Parsing package <log_pkg>.
 Parsing package body <log_pkg>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/mytypes.vhd" into library mylibs
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/mytypes.vhd" into library mylibs
 Parsing package <mytypes>.
 Parsing package body <mytypes>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/vga_output.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/edk/microblaze/hdl/microblaze.vhd" into library work
+Parsing entity <microblaze>.
+Parsing architecture <STRUCTURE> of entity <microblaze>.
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/vga_output.vhd" into library work
 Parsing entity <vga_output>.
 Parsing architecture <Behavioral> of entity <vga_output>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/vga_input.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/vga_input.vhd" into library work
 Parsing entity <vga_input>.
 Parsing architecture <Behavioral> of entity <vga_input>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/hmi.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/hmi.vhd" into library work
 Parsing entity <hmi>.
 Parsing architecture <Behavioral> of entity <hmi>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/frame_overlay.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/frame_overlay.vhd" into library work
 Parsing entity <frame_overlay>.
 Parsing architecture <Behavioral> of entity <frame_overlay>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/frame_analysis.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/frame_analysis.vhd" into library work
 Parsing entity <frame_analysis>.
 Parsing architecture <Behavioral> of entity <frame_analysis>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/filter.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/filter.vhd" into library work
 Parsing entity <filter>.
 Parsing architecture <Behavioral> of entity <filter>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/ai_player.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/ai_player.vhd" into library work
 Parsing entity <ai_player>.
 Parsing architecture <Behavioral> of entity <ai_player>.
-Parsing VHDL file "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" into library work
+Parsing VHDL file "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/top.vhd" into library work
 Parsing entity <top>.
 Parsing architecture <Behavioral> of entity <top>.
 
@@ -104,20 +110,21 @@ Elaborating entity <vga_output> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <ai_player> (architecture <Behavioral>) from library <work>.
 
+Elaborating entity <microblaze> (architecture <>) from library <work>.
+
 Elaborating entity <hmi> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 76: Net <clock_200M> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 78: Net <clk_100M> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 90: Net <enable_frame_overlay> does not have a driver.
+WARNING:HDLCompiler:634 - "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 76: Net <clock_200M> does not have a driver.
+WARNING:HDLCompiler:634 - "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 78: Net <clk_100M> does not have a driver.
+WARNING:HDLCompiler:634 - "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/top.vhd" Line 90: Net <enable_frame_overlay> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd".
+    Related source file is "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/top.vhd".
 WARNING:Xst:647 - Input <j7_dip_sw_i<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk_200M_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/top.vhd" line 274: Output port <ai_enable_o> of the instance <hmi_1> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <clock_200M> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <clk_100M> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <enable_frame_overlay> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -125,67 +132,125 @@ WARNING:Xst:653 - Signal <enable_frame_overlay> is used but never assigned. This
 	no macro.
 Unit <top> synthesized.
 
-Synthesizing Unit <vga_output>.
-    Related source file is "/home/dimx/Documents/Uni/Embedded3/PongPowerPlayer/PongPowerPlayer.srcs/sources_1/new/vga_output.vhd".
-WARNING:Xst:647 - Input <pixel_RGB_i_header_pos_hpos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <pixel_RGB_i_header_pos_vpos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 3-bit register for signal <g_channel>.
-    Found 3-bit register for signal <b_channel>.
-    Found 1-bit register for signal <hsync>.
-    Found 1-bit register for signal <vsync>.
-    Found 3-bit register for signal <r_channel>.
+Synthesizing Unit <ai_player>.
+    Related source file is "/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/new/ai_player.vhd".
+    Set property "BOX_TYPE = user_black_box" for instance <microblaze_i>.
+WARNING:Xst:647 - Input <bat_position_i_hpos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred  11 D-type flip-flop(s).
-Unit <vga_output> synthesized.
+	no macro.
+Unit <ai_player> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
-Macro Statistics
-# Registers                                            : 5
- 1-bit register                                        : 2
- 3-bit register                                        : 3
-
+Found no macro
 =========================================================================
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_axi_gpio_direction_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_axi_gpio_positions_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_proc_sys_reset_0_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_clock_generator_0_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_axi_uartlite_0_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_microblaze_0_ilmb_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_microblaze_0_dlmb_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_axi4lite_0_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_microblaze_0_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_microblaze_0_i_bram_ctrl_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_microblaze_0_d_bram_ctrl_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_debug_module_wrapper.ngc>.
+Reading core <../../PongPowerPlayer.srcs/sources_1/edk/microblaze/implementation/microblaze_microblaze_0_bram_block_wrapper.ngc>.
+Loading core <microblaze_axi_gpio_direction_wrapper> for timing and area information for instance <axi_gpio_direction>.
+Loading core <microblaze_axi_gpio_positions_wrapper> for timing and area information for instance <axi_gpio_positions>.
+Loading core <microblaze_proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <microblaze_clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <microblaze_axi_uartlite_0_wrapper> for timing and area information for instance <axi_uartlite_0>.
+Loading core <microblaze_microblaze_0_ilmb_wrapper> for timing and area information for instance <microblaze_0_ilmb>.
+Loading core <microblaze_microblaze_0_dlmb_wrapper> for timing and area information for instance <microblaze_0_dlmb>.
+Loading core <microblaze_axi4lite_0_wrapper> for timing and area information for instance <axi4lite_0>.
+Loading core <microblaze_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <microblaze_microblaze_0_i_bram_ctrl_wrapper> for timing and area information for instance <microblaze_0_i_bram_ctrl>.
+Loading core <microblaze_microblaze_0_d_bram_ctrl_wrapper> for timing and area information for instance <microblaze_0_d_bram_ctrl>.
+Loading core <microblaze_debug_module_wrapper> for timing and area information for instance <debug_module>.
+Loading core <microblaze_microblaze_0_bram_block_wrapper> for timing and area information for instance <microblaze_0_bram_block>.
+Loading core <microblaze> for timing and area information for instance <microblaze_i>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Macro Statistics
-# Registers                                            : 11
- Flip-Flops                                            : 11
-
+Found no macro
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <b_channel_0> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <b_channel_1> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <b_channel_2> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_channel_0> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_channel_1> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_channel_2> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_channel_0> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_channel_1> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_channel_2> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hsync> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vsync> has a constant value of 0 in block <vga_output>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <top> ...
 
 Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_red_o<2>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_red_o<1>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_red_o<0>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_green_o<2>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_green_o<1>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_green_o<0>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_blue_o<2>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_blue_o<1>> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_blue_o<0>> driven by black box <vga_output>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <fx2_vga_red_clk_o> driven by black box <vga_input>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <fx2_vga_green_clk_o> driven by black box <vga_input>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <fx2_vga_blue_clk_o> driven by black box <vga_input>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <ft232h_rs232_tx_o> driven by black box <ai_player>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_hsync_o> driven by black box <vga_output>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <j8_vga_vsync_o> driven by black box <vga_output>. Possible simulation mismatch.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 0.
+Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 3.
+WARNING:Xst:387 - The KEEP property attached to the net <ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+INFO:Xst:2260 - The FF/Latch <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> in Unit <axi_gpio_positions> is equivalent to the following 4 FFs/Latches : <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_1> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_2> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_3> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_4> 
+INFO:Xst:2260 - The FF/Latch <axi_uartlite_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_uartlite_0> is equivalent to the following FF/Latch : <axi_uartlite_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
+INFO:Xst:2260 - The FF/Latch <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> in Unit <axi_gpio_positions> is equivalent to the following 4 FFs/Latches : <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_1> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_2> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_3> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_4> 
+INFO:Xst:2260 - The FF/Latch <axi_uartlite_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_uartlite_0> is equivalent to the following FF/Latch : <axi_uartlite_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
+INFO:Xst:2260 - The FF/Latch <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> in Unit <axi_gpio_positions> is equivalent to the following 4 FFs/Latches : <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_1> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_2> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_3> <axi_gpio_positions/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_4> 
+INFO:Xst:2260 - The FF/Latch <axi_uartlite_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_uartlite_0> is equivalent to the following FF/Latch : <axi_uartlite_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
 
 Final Macro Processing ...
 
@@ -214,18 +279,59 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
-#      GND                         : 1
+# BELS                             : 2748
+#      GND                         : 16
+#      INV                         : 37
+#      LUT1                        : 41
+#      LUT2                        : 161
+#      LUT3                        : 439
+#      LUT4                        : 290
+#      LUT5                        : 327
+#      LUT6                        : 847
+#      LUT6_2                      : 96
+#      MULT_AND                    : 2
+#      MUXCY                       : 32
+#      MUXCY_L                     : 165
+#      MUXF7                       : 165
+#      VCC                         : 10
+#      XORCY                       : 120
+# FlipFlops/Latches                : 2283
+#      FD                          : 235
+#      FDC                         : 37
+#      FDC_1                       : 5
+#      FDCE                        : 15
+#      FDE                         : 408
+#      FDE_1                       : 8
+#      FDP                         : 5
+#      FDR                         : 738
+#      FDRE                        : 724
+#      FDRE_1                      : 1
+#      FDS                         : 17
+#      FDSE                        : 90
+# RAMS                             : 20
+#      RAM32M                      : 16
+#      RAMB16BWER                  : 4
+# Shift Registers                  : 182
+#      SRL16                       : 1
+#      SRL16E                      : 34
+#      SRLC16E                     : 147
+# Clock Buffers                    : 4
+#      BUFG                        : 4
 # IO Buffers                       : 51
 #      IBUF                        : 36
 #      OBUF                        : 15
-# Others                           : 6
-#      ai_player                   : 1
+# DSPs                             : 3
+#      DSP48A1                     : 3
+# Others                           : 9
+#      AND2B1L                     : 1
+#      BSCAN_SPARTAN6              : 1
 #      filter                      : 1
 #      frame_analysis              : 1
 #      frame_overlay               : 1
 #      hmi                         : 1
+#      PLL_ADV                     : 1
 #      vga_input                   : 1
+#      vga_output                  : 1
 
 Device utilization summary:
 ---------------------------
@@ -234,19 +340,30 @@ Selected Device : xa6slx45fgg484-3
 
 
 Slice Logic Utilization: 
+ Number of Slice Registers:            2283  out of  54576     4%  
+ Number of Slice LUTs:                 2484  out of  27288     9%  
+    Number used as Logic:              2238  out of  27288     8%  
+    Number used as Memory:              246  out of   6408     3%  
+       Number used as RAM:               64
+       Number used as SRL:              182
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:   3614
+   Number with an unused Flip Flop:    1331  out of   3614    36%  
+   Number with an unused LUT:          1130  out of   3614    31%  
+   Number of fully used LUT-FF pairs:  1153  out of   3614    31%  
+   Number of unique control sets:       130
 
 IO Utilization: 
  Number of IOs:                          58
  Number of bonded IOBs:                  51  out of    316    16%  
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:                4  out of    116     3%  
+    Number using Block RAM only:          4
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of DSP48A1s:                      3  out of     58     5%  
+ Number of PLL_ADVs:                      1  out of      4    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -266,7 +383,14 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+---------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                             | Clock buffer(FF name)                                                                                                                      | Load  |
+---------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+ai_player_1/enable_frame_overlay                         | PLL_ADV:CLKOUT0                                                                                                                            | 2236  |
+ai_player_1/microblaze_i/debug_module/debug_module/drck_i| BUFG                                                                                                                                       | 209   |
+ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE    | NONE(ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 43    |
+---------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -276,9 +400,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Minimum period: 9.886ns (Maximum Frequency: 101.156MHz)
+   Minimum input arrival time before clock: 7.268ns
+   Maximum output required time after clock: 9.715ns
    Maximum combinational path delay: 3.150ns
 
 Timing Details:
@@ -286,19 +410,262 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 152 / 152
+Timing constraint: Default period analysis for Clock 'ai_player_1/enable_frame_overlay'
+  Clock period: 3.914ns (frequency: 255.474MHz)
+  Total number of paths / destination ports: 286992 / 5633
 -------------------------------------------------------------------------
-Delay:               3.150ns (Levels of Logic = 1)
-  Source:            vga_input_1:r_clock_o (PAD)
-  Destination:       fx2_vga_red_clk_o (PAD)
+Delay:               7.829ns (Levels of Logic = 0)
+  Source:            ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I/EX_Op2_31 (FF)
+  Destination:       ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48A.Normal_in_fabric.DSP48A_I1 (DSP)
+  Source Clock:      ai_player_1/enable_frame_overlay rising 0.5X
+  Destination Clock: ai_player_1/enable_frame_overlay rising 0.5X
 
-  Data Path: vga_input_1:r_clock_o to fx2_vga_red_clk_o
+  Data Path: ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I/EX_Op2_31 to ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48A.Normal_in_fabric.DSP48A_I1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    vga_input:r_clock_o    1   0.000   0.579  vga_input_1 (fx2_vga_red_clk_o_OBUF)
-     OBUF:I->O                 2.571          fx2_vga_red_clk_o_OBUF (fx2_vga_red_clk_o)
+     FDRE:C->Q            48   0.447   1.519  microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I/EX_Op2_31 (microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ex_op2<31>)
+     DSP48A1:B0                5.863          microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48A.Normal_in_fabric.DSP48A_I1
+    ----------------------------------------
+    Total                      7.829ns (6.310ns logic, 1.519ns route)
+                                       (80.6% logic, 19.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ai_player_1/microblaze_i/debug_module/debug_module/drck_i'
+  Clock period: 6.953ns (frequency: 143.817MHz)
+  Total number of paths / destination ports: 345 / 249
+-------------------------------------------------------------------------
+Delay:               3.477ns (Levels of Logic = 11)
+  Source:            ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (FF)
+  Destination:       ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Source Clock:      ai_player_1/microblaze_i/debug_module/debug_module/drck_i falling
+  Destination Clock: ai_player_1/microblaze_i/debug_module/debug_module/drck_i rising
+
+  Data Path: ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE to ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE_1:C->Q           1   0.447   0.924  debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (debug_module/MDM_Core_I1/JTAG_CONTROL_I/sync)
+     LUT6:I1->O           17   0.203   1.132  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
+     end scope: 'ai_player_1/microblaze_i/debug_module:Dbg_Shift_0'
+     begin scope: 'ai_player_1/microblaze_i/microblaze_0:DBG_SHIFT'
+     LUT2:I0->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.180   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
+     FD:D                      0.102          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+    ----------------------------------------
+    Total                      3.477ns (1.421ns logic, 2.056ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE'
+  Clock period: 9.886ns (frequency: 101.156MHz)
+  Total number of paths / destination ports: 350 / 53
+-------------------------------------------------------------------------
+Delay:               4.943ns (Levels of Logic = 4)
+  Source:            ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk (FF)
+  Source Clock:      ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE falling
+  Destination Clock: ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE rising
+
+  Data Path: ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.447   1.062  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            2   0.203   0.961  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I41 (Dbg_Reg_En_0<3>)
+     end scope: 'ai_player_1/microblaze_i/debug_module:Dbg_Reg_En_0<3>'
+     begin scope: 'ai_player_1/microblaze_i/microblaze_0:DBG_REG_EN<3>'
+     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_254_o_PWR_117_o_MUX_5031_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_254_o_PWR_117_o_MUX_5031_o11)
+     LUT4:I3->O           10   0.205   0.856  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En<0>1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
+     FDCE:CE                   0.322          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk
+    ----------------------------------------
+    Total                      4.943ns (1.380ns logic, 3.563ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ai_player_1/enable_frame_overlay'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              1.892ns (Levels of Logic = 1)
+  Source:            ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:UPDATE (PAD)
+  Destination:       ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/running_clock (FF)
+  Destination Clock: ai_player_1/enable_frame_overlay rising 0.5X
+
+  Data Path: ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:UPDATE to ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/running_clock
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:UPDATE   44   0.000   0.000  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (Ext_JTAG_UPDATE)
+     end scope: 'ai_player_1/microblaze_i/debug_module:Dbg_Update_0'
+     begin scope: 'ai_player_1/microblaze_i/microblaze_0:DBG_UPDATE'
+     FDC:CLR                   0.430          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/running_clock
+    ----------------------------------------
+    Total                      1.892ns (1.892ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ai_player_1/microblaze_i/debug_module/debug_module/drck_i'
+  Total number of paths / destination ports: 182 / 126
+-------------------------------------------------------------------------
+Offset:              3.185ns (Levels of Logic = 11)
+  Source:            ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT (PAD)
+  Destination:       ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Destination Clock: ai_player_1/microblaze_i/debug_module/debug_module/drck_i rising
+
+  Data Path: ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT to ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    5   0.000   1.079  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (Ext_JTAG_SHIFT)
+     LUT6:I0->O           17   0.203   1.132  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
+     end scope: 'ai_player_1/microblaze_i/debug_module:Dbg_Shift_0'
+     begin scope: 'ai_player_1/microblaze_i/microblaze_0:DBG_SHIFT'
+     LUT2:I0->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.180   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
+     FD:D                      0.102          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+    ----------------------------------------
+    Total                      3.185ns (0.974ns logic, 2.211ns route)
+                                       (30.6% logic, 69.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              7.268ns (Levels of Logic = 6)
+  Source:            ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SEL (PAD)
+  Destination:       ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination Clock: ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE falling
+
+  Data Path: ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SEL to ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL     8   0.000   0.907  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (debug_module/sel)
+     LUT5:I3->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n01281 (debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n0128)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n)
+     LUT4:I0->O            1   0.203   0.579  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n)
+     FDC_1:CLR                 0.430          debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+    ----------------------------------------
+    Total                      7.268ns (1.648ns logic, 5.620ns route)
+                                       (22.7% logic, 77.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ai_player_1/enable_frame_overlay'
+  Total number of paths / destination ports: 17 / 3
+-------------------------------------------------------------------------
+Offset:              4.597ns (Levels of Logic = 7)
+  Source:            ai_player_1/microblaze_i/microblaze_0_d_bram_ctrl/microblaze_0_d_bram_ctrl/Sl_Rdy (FF)
+  Destination:       ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI (PAD)
+  Source Clock:      ai_player_1/enable_frame_overlay rising 0.5X
+
+  Data Path: ai_player_1/microblaze_i/microblaze_0_d_bram_ctrl/microblaze_0_d_bram_ctrl/Sl_Rdy to ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.684  microblaze_0_d_bram_ctrl/Sl_Rdy (microblaze_0_d_bram_ctrl/Sl_Rdy)
+     LUT2:I0->O            4   0.203   0.788  microblaze_0_d_bram_ctrl/Sl_Ready_i1 (Sl_Ready)
+     end scope: 'ai_player_1/microblaze_i/microblaze_0_d_bram_ctrl:Sl_Ready'
+     begin scope: 'ai_player_1/microblaze_i/microblaze_0_dlmb:Sl_Ready<0>'
+     end scope: 'ai_player_1/microblaze_i/microblaze_0_dlmb:LMB_Ready'
+     begin scope: 'ai_player_1/microblaze_i/microblaze_0:DREADY'
+     LUT2:I0->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.A_N1 (microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.A_N)
+     MUXCY_L:S->LO         1   0.172   0.000  microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready)
+     MUXCY_L:CI->LO        1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N)
+     MUXCY_L:CI->LO      238   0.019   2.062  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_PipeRun_carry_and/Using_FPGA.MUXCY_I (Trace_MEM_PipeRun)
+    AND2B1L:DI                 0.000          microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1
+    ----------------------------------------
+    Total                      4.597ns (1.063ns logic, 3.534ns route)
+                                       (23.1% logic, 76.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE'
+  Total number of paths / destination ports: 49 / 1
+-------------------------------------------------------------------------
+Offset:              6.767ns (Levels of Logic = 8)
+  Source:            ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE falling
+
+  Data Path: ai_player_1/microblaze_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.447   1.062  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            7   0.203   0.774  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I81 (Dbg_Reg_En_0<7>)
+     end scope: 'ai_player_1/microblaze_i/debug_module:Dbg_Reg_En_0<7>'
+     begin scope: 'ai_player_1/microblaze_i/microblaze_0:DBG_REG_EN<7>'
+     LUT6:I5->O            1   0.205   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
+     LUT6:I4->O            1   0.203   0.808  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
+     LUT3:I0->O            1   0.205   0.944  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
+     end scope: 'ai_player_1/microblaze_i/microblaze_0:DBG_TDO'
+     begin scope: 'ai_player_1/microblaze_i/debug_module:Dbg_TDO_0'
+     LUT6:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.203   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          debug_module/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                      6.767ns (1.669ns logic, 5.098ns route)
+                                       (24.7% logic, 75.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ai_player_1/microblaze_i/debug_module/debug_module/drck_i'
+  Total number of paths / destination ports: 199 / 1
+-------------------------------------------------------------------------
+Offset:              9.715ns (Levels of Logic = 9)
+  Source:            ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 (FF)
+  Destination:       ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      ai_player_1/microblaze_i/debug_module/debug_module/drck_i rising
+
+  Data Path: ai_player_1/microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 to ai_player_1/microblaze_i/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              30   0.447   1.608  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count<3>)
+     LUT5:I0->O            1   0.203   0.924  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO124)
+     LUT6:I1->O            1   0.203   0.924  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125)
+     LUT6:I1->O            1   0.203   0.924  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO127 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126)
+     LUT6:I1->O            1   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
+     LUT6:I4->O            1   0.203   0.808  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
+     LUT3:I0->O            1   0.205   0.944  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
+     end scope: 'ai_player_1/microblaze_i/microblaze_0:DBG_TDO'
+     begin scope: 'ai_player_1/microblaze_i/debug_module:Dbg_TDO_0'
+     LUT6:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.203   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          debug_module/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                      9.715ns (2.073ns logic, 7.642ns route)
+                                       (21.3% logic, 78.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 151 / 151
+-------------------------------------------------------------------------
+Delay:               3.150ns (Levels of Logic = 1)
+  Source:            vga_output_1:r_channel_o<2> (PAD)
+  Destination:       j8_vga_red_o<2> (PAD)
+
+  Data Path: vga_output_1:r_channel_o<2> to j8_vga_red_o<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    vga_output:r_channel_o<2>    1   0.000   0.579  vga_output_1 (j8_vga_red_o_2_OBUF)
+     OBUF:I->O                 2.571          j8_vga_red_o_2_OBUF (j8_vga_red_o<2>)
     ----------------------------------------
     Total                      3.150ns (2.571ns logic, 0.579ns route)
                                        (81.6% logic, 18.4% route)
@@ -308,18 +675,48 @@ Delay:               3.150ns (Levels of Logic = 1)
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock ai_player_1/enable_frame_overlay
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+ai_player_1/enable_frame_overlay                         |    7.829|         |         |         |
+ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE    |    3.711|    2.923|         |         |
+ai_player_1/microblaze_i/debug_module/debug_module/drck_i|    4.360|         |         |         |
+---------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+ai_player_1/enable_frame_overlay                         |    2.344|         |         |         |
+ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE    |         |    4.943|    7.982|         |
+ai_player_1/microblaze_i/debug_module/debug_module/drck_i|    1.263|         |         |         |
+---------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ai_player_1/microblaze_i/debug_module/debug_module/drck_i
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+ai_player_1/enable_frame_overlay                         |    5.158|         |         |         |
+ai_player_1/microblaze_i/debug_module/Ext_JTAG_UPDATE    |         |    4.934|    2.873|         |
+ai_player_1/microblaze_i/debug_module/debug_module/drck_i|    2.427|    3.477|    3.249|         |
+---------------------------------------------------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.79 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.63 secs
  
 --> 
 
 
-Total memory usage is 392208 kilobytes
+Total memory usage is 450496 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   25 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
 

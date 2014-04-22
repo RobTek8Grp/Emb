@@ -1,0 +1,73 @@
+Release 14.6 - platgen Xilinx EDK 14.6 Build EDK_P.68d
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xa6slx45fgg484-3 -lang vhdl -intstyle pa -itemplate -tm
+microblaze
+/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/edk/microblaze/micr
+oblaze.mhs 
+
+Parse
+/media/leon/Data/EMB3/git/Emb/PongPowerPlayer.srcs/sources_1/edk/microblaze/micr
+oblaze.mhs ...
+
+Create merged mhs ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   /home/leon/programs/xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mic
+   roblaze_v8_50_b/data/microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   /home/leon/programs/xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mic
+   roblaze_v8_50_b/data/microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   /home/leon/programs/xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mic
+   roblaze_v8_50_b/data/microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   /home/leon/programs/xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi
+   _interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) axi_gpio_positions	axi4lite_0
+  (0x40040000-0x4004ffff) axi_gpio_direction	axi4lite_0
+  (0x40600000-0x4060ffff) axi_uartlite_0	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   /home/leon/programs/xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb
+   _v10_v2_00_b/data/lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   /home/leon/programs/xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb
+   _v10_v2_00_b/data/lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   /home/leon/programs/xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bra
+   m_block_v1_00_a/data/bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Creating stub ...
+
+Inserting wrapper level ...
+
+Writing top-level HDL ...
+
+Total run time: 2.00 seconds

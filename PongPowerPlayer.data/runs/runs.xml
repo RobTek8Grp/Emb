@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="8">
-	<Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xa6slx45fgg484-3" LaunchPart="xa6slx45fgg484-3" ConstrsSet="constrs_1" Description="PlanAhead Defaults (XST defaults with hierarchy)" State="current" Dir="$PRUNDIR/synth_1" LaunchTime="1397643227">
+
+	<Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xa6slx45fgg484-3" LaunchPart="xa6slx45fgg484-3" ConstrsSet="constrs_1" Description="PlanAhead Defaults (XST defaults with hierarchy)" State="current" Dir="$PRUNDIR/synth_1" LaunchTime="1398155675">
+
 		<File Type="XST-NGC" Name="top.ngc"/>
 		<File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
 		<File Type="XST-SRP" Name="top.srp"/>
